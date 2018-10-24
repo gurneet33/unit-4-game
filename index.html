@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <title>Crystal Game</title>
     <link href="https://fonts.googleapis.com/css?family=Diplomata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <!-- Added link to the jQuery Library -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
@@ -18,13 +19,44 @@
     <nav class="navbar navbar-light">
         <a class="navbar-brand text-lg-center" href="#">The Healing Crystal Game</a>
       </nav>
+<div class="container">
+    <div class="row">
+        <!-- for instructions -->
+      <div class="col-md-5">
+            <div class="card">
+                    <div class="card-header">
+                        How to Play
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">You will be given a random number at the start of the game</p>
+                      <p class="card-text">There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>     
+                      <p class="card-text">You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+                      <p class="card-text">The value of each crystal is hidden from you until you click on it.</p>
+                      <p class="card-text">Each time when the game starts, the game will change the values of each crystal.</p> 
+                    </div>
+             </div>
+      </div>
+
+      <!-- for healing pic -->
+      <div class="col-md-7">
+            <img class = "mainImg " src="./assets/images/wall2.jpg" alt="background">
+                <img class="overlay gem1 " src="./assets/images/mandalablack.png" alt="background">
+                <img class="overlay gem2 " src="./assets/images/mandalablack.png" alt="background">
+                <img class="overlay gem3 " src="./assets/images/mandalablack.png" alt="background">
+                <img class="overlay gem4 " src="./assets/images/mandalablack.png" alt="background"> 
+                <div class="overlay numberDiv"></div>
+                <div class="row">
+                        <div class="col-md-3 scoreBoard">Your Total Score is: <br> <span id="score">span</span></div>
+                        <div class="col-md-4 victoryNumberBoard" ></div>
+                    </div>
+        </div>
+       
       
-    <script type="text/javascript" src="./assets/javascript/game.js"></script>
-    <img class = "center " src="./assets/images/wall2.jpg" alt="background">
-    <img class = "over1 " src="./assets/images/mandalablack.png" alt="background">
-    <img class = "over2 " src="./assets/images/black.jpg" alt="background">
-    <img class = "over3 " src="./assets/images/black.jpg" alt="background">
-    <img class = "over4 " src="./assets/images/black.jpg" alt="background"> 
+    </div>
+    <!-- For score and victory/loss-->
+   
+</div>
+<script type="text/javascript" src="./assets/javascript/game.js"></script>
 </body>
 
 </html>

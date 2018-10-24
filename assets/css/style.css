@@ -1,0 +1,46 @@
+/* @import "bourbon";
+
+$col-primary: #00c7ec;
+$corner-radius: 5px; */
+
+body {
+    background-image: linear-gradient(to right, rgba(250, 190, 209, 0), rgba(255,193,203,1));
+}
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    position: relative;
+    opacity: 0.7;
+}
+
+.navbar-brand {
+text-align: center;
+color: purple;
+text-shadow: rgb(238, 0, 111) 0 0 10px;
+padding:1% 32%;
+font-family: 'Diplomata', cursive;
+
+}
+.over1 {
+    position: absolute;
+    top: 70%;
+    left:40%;
+    height: 90px;
+}
+.over2 {
+    position: absolute;
+    top: 70%;
+    left:30%;
+}
+.over3 {
+    position: absolute;
+    top: 80%;
+    left:50%;
+}
+.over4 {
+    position: absolute;
+    top: 70%;
+    left:60%;
+}

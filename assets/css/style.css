@@ -36,22 +36,22 @@ body {
     left:20%; */
 }
 .gem1 {
-    top: 35%;
+    top: 50%;
     left: 5%;
 }
 
 .gem2 {
-    top: 50%;
+    top: 65%;
     left: 25%;
 }
 
 .gem3 {
-    top: 50%;
+    top: 65%;
     left: 60%;
 }
 
 .gem4 {
-    top: 35%;
+    top: 50%;
     left: 80%;
 }
 
@@ -63,7 +63,7 @@ body {
     /* border: 2px solid black; */
     position: absolute;
     top: 17%;
-    left: 47%;
+    left: 45%;
     animation-name: example;
     animation-duration: 4s;
 }
@@ -80,22 +80,61 @@ body {
 .card-header {
     font-family: 'Diplomata', cursive;
 }
-.col-md-3 {
-    /* right: 150px; */
-    /* width: 70px; */
-    /* padding-left: 0px; */
-}
+
 .scoreBoard{
     font-family: 'Diplomata', cursive;
     color: rgb(117, 4, 117);
     font-size: 13px;
     line-height: 3em;
     text-decoration: underline gray; 
-    border: 2px solid gray;
-    padding: 1% 1%;
-    margin:1% 1%;
+    border: 2px solid black;
+    position: absolute;
+    top: 1%;
+    left: 3%;
+    padding: 1% 2%;
+    text-align: center;
+    }
 
-}
+ .victory {
+    background-color: aqua; 
+    width: 20px;
+    height: 20px;
+    padding: 2% 0;
+    margin-bottom: 2%;
+    position: absolute;
+    top: 1%;
+    left:60%;
+ }
+ .penergy{
+    position: absolute;
+    top: 1%;
+    left:50%;
+    height: 20px;
+    margin-bottom: 2%;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(117, 4, 117);
+    
+ }
+ .loser {
+     background-color: red;
+     width: 20px;
+     height: 20px;
+     padding: 2% 0;
+    margin-top: 2%;
+    position: absolute;
+    top: 6%;
+    left:60%;
+ }
+ .nenergy{
+    position: absolute;
+    top: 6%;
+    left:50%;
+    height: 20px;
+    margin-top: 2%;
+    font-family: 'Oswald', sans-serif;
+    color: rgb(117, 4, 117);
+    
+ }
 @keyframes example {
     from {color: rgb(117, 4, 117);}
     to {color: rgb(238, 0, 111);}

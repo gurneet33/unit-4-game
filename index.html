@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Crystal Game</title>
+    <link href="https://fonts.googleapis.com/css?family=Diplomata" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Oswald" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- Added link to the jQuery Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <!-- Added a link to Bootstrap-->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assets/css/style.css">
+</head>
+
+<body>
+    <nav class="navbar navbar-light">
+        <a class="navbar-brand text-lg-center" href="#">The Healing Crystal Game</a>
+      </nav>
+<div class="container">
+    <div class="row">
+        <!-- for instructions -->
+      <div class="col-md-5">
+            <div class="card">
+                    <div class="card-header">
+                        How to Play
+                    </div>
+                    <div class="card-body">
+                      <p class="card-text">You will be given a random number at the start of the game</p>
+                      <p class="card-text">There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>     
+                      <p class="card-text">You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+                      <p class="card-text">The value of each crystal is hidden from you until you click on it.</p>
+                      <p class="card-text">Each time when the game starts, the game will change the values of each crystal.</p> 
+                    </div>
+             </div>
+      </div>
+
+      <!-- for healing pic -->
+      <div class="col-md-7">
+            <img class = "mainImg " src="./assets/images/wall2.jpg" alt="background">
+                <img class="overlay gems gem1  " src="./assets/images/mandalablack.png" alt="background">
+                <img class="overlay gems gem2 " src="./assets/images/mandalablack.png" alt="background">
+                <img class="overlay gems gem3 " src="./assets/images/mandalablack.png" alt="background">
+                <img class="overlay gems gem4 " src="./assets/images/mandalablack.png" alt="background"> 
+                <div class="overlay numberDiv"></div>
+                        <div class="scoreBoard">Your Total is: <br> <span id="score"></span></div>
+                        <div class="victoryBoard" > <br><span class="penergy"></span><br>
+                            <span class="nenergy"></span>
+
+                            <section class="win"></section>
+                            <section class="loss"></section>
+                        </div>
+                    
+        </div>
+       
+      
+    </div>
+    <!-- For score and victory/loss-->
+   
+</div>
+<script type="text/javascript" src="./assets/javascript/game.js"></script>
+</body>
+
+</html>a

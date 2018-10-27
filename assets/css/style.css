@@ -1,39 +1,32 @@
 body {
-    background-image: linear-gradient(to right, rgba(250, 190, 209, 0), rgba(255,193,203,1));
+    background-image: linear-gradient(to right, rgba(250, 190, 209, 0.4), rgba(255,193,203,1));
 }
 
 .heading {
     text-align: center;
-    color: purple;
+    color:  rgb(117, 4, 117);
     text-shadow: rgb(238, 0, 111) 0 0 10px;
-    /* padding:1% 32%; */
     font-family: 'Diplomata', cursive;
     font-size: 21px;
-    padding: 2% 1%;
+    padding: 3% 1%;
     margin: 2% 0;
-    border-bottom: 1px solid rgb(238, 0, 111);
-    /* background-color: white;  */
+    border-bottom: 1px solid rgb(238, 0, 111); 
 }
 
+/* gaming area */
 .mainImg {
-    display: block;/* 
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;*/
+    display: block;
     top: 0;
     left: 0;
     position: relative; 
     opacity: 0.5;
     width: 100%;
-    /* height: 100%; */
 }
-
 
 .overlay {
     height:90px ;
     position: absolute;
-    /* top: 70%;
-    left:20%; */
+   
 }
 .gem1 {
     top: 50%;
@@ -49,7 +42,6 @@ body {
     top: 65%;
     left: 60%;
 }
-
 .gem4 {
     top: 50%;
     left: 80%;
@@ -65,12 +57,11 @@ body {
     top: 17%;
     left: 45%;
     animation-name: example;
-    animation-duration: 4s;
+    animation-duration: 5s;
 }
 
 .card {
     background-color:rgba(255,193,203,0.1);
-    /* width: 450px; */
 }
 
 .card-text {
@@ -81,11 +72,12 @@ body {
     font-family: 'Diplomata', cursive;
 }
 
+    /* total score */
 .scoreBoard{
     font-family: 'Diplomata', cursive;
     color: rgb(117, 4, 117);
     font-size: 16px;
-    line-height: 3em;
+    line-height: 2em;
     text-decoration: underline gray; 
     /* border: 2px solid black; */
     position: absolute;
@@ -95,6 +87,7 @@ body {
     text-align: center;
     }
 
+        /* The Energy bars */
  .victory {
     background-color: aqua; 
     width: 20px;
@@ -133,8 +126,8 @@ body {
     margin-top: 2%;
     font-family: 'Oswald', sans-serif;
     color: rgb(117, 4, 117);
-    
  }
+ 
 @keyframes example {
     from {color: rgb(117, 4, 117);}
     to {color: rgb(238, 0, 111);}

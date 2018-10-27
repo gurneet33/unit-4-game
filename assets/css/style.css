@@ -1,18 +1,18 @@
-/* @import "bourbon";
-
-$col-primary: #00c7ec;
-$corner-radius: 5px; */
-
 body {
     background-image: linear-gradient(to right, rgba(250, 190, 209, 0), rgba(255,193,203,1));
 }
 
-.navbar-brand {
+.heading {
     text-align: center;
     color: purple;
     text-shadow: rgb(238, 0, 111) 0 0 10px;
-    padding:1% 32%;
+    /* padding:1% 32%; */
     font-family: 'Diplomata', cursive;
+    font-size: 21px;
+    padding: 2% 1%;
+    margin: 2% 0;
+    border-bottom: 1px solid rgb(238, 0, 111);
+    /* background-color: white;  */
 }
 
 .mainImg {
@@ -84,10 +84,10 @@ body {
 .scoreBoard{
     font-family: 'Diplomata', cursive;
     color: rgb(117, 4, 117);
-    font-size: 13px;
+    font-size: 16px;
     line-height: 3em;
     text-decoration: underline gray; 
-    border: 2px solid black;
+    /* border: 2px solid black; */
     position: absolute;
     top: 1%;
     left: 3%;
@@ -103,7 +103,7 @@ body {
     margin-bottom: 2%;
     position: absolute;
     top: 1%;
-    left:60%;
+    left:65%;
  }
  .penergy{
     position: absolute;
@@ -123,7 +123,7 @@ body {
     margin-top: 2%;
     position: absolute;
     top: 6%;
-    left:60%;
+    left:65%;
  }
  .nenergy{
     position: absolute;

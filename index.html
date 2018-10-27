@@ -16,9 +16,9 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-light">
-        <a class="navbar-brand text-lg-center" href="#">The Healing Crystal Game</a>
-      </nav>
+    <div class="container">
+        <h1 class="heading text-center">The Healing Crystal Game</h1>
+      </div>
 <div class="container">
     <div class="row">
         <!-- for instructions -->
@@ -30,7 +30,7 @@
                     <div class="card-body">
                       <p class="card-text">You will be given a random number at the start of the game</p>
                       <p class="card-text">There are four crystals below. By clicking on a crystal you will add a specific amount of points to your total score.</p>     
-                      <p class="card-text">You win the game by matching your total score to random number, you lose the game if your total score goes above the random number.</p>
+                      <p class="card-text">You win the game and gain positive energy by matching your total score to random number. You lose the game and get negative energy,if your total score goes above the random number.</p>
                       <p class="card-text">The value of each crystal is hidden from you until you click on it.</p>
                       <p class="card-text">Each time when the game starts, the game will change the values of each crystal.</p> 
                     </div>
@@ -40,10 +40,10 @@
       <!-- for healing pic -->
       <div class="col-md-7">
             <img class = "mainImg " src="./assets/images/wall2.jpg" alt="background">
-                <img class="overlay gems gem1  " src="./assets/images/mandalablack.png" alt="background">
-                <img class="overlay gems gem2 " src="./assets/images/mandalablack.png" alt="background">
-                <img class="overlay gems gem3 " src="./assets/images/mandalablack.png" alt="background">
-                <img class="overlay gems gem4 " src="./assets/images/mandalablack.png" alt="background"> 
+                <img class="overlay gems gem1  " src="./assets/images/mandala_red.png" alt="background">
+                <img class="overlay gems gem2 " src="./assets/images/mandala_yellow.png" alt="background">
+                <img class="overlay gems gem3 " src="./assets/images/mandala_green.png" alt="background">
+                <img class="overlay gems gem4 " src="./assets/images/mandala_blue.png" alt="background"> 
                 <div class="overlay numberDiv"></div>
                         <div class="scoreBoard">Your Total is: <br> <span id="score"></span></div>
                         <div class="victoryBoard" > <br><span class="penergy"></span><br>

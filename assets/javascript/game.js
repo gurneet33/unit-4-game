@@ -4,10 +4,15 @@ var wins = 0;
 var loss = 0;
 var widthGen = 1;
 var lossGen = 1;
+// Gets Link for Theme Song
+var audioElement = document.createElement("audio");
+audioElement.setAttribute("src", "assets/captainplanet24.mp3");
 
+
+ 
 function generate() {
     gemNumber1 = Math.floor(Math.random() * 10+1);  
-    gemNumber2 = Math.floor(Math.random() * 10+1); 
+    gemNumber2 = Math.floor(Math.random() * 10+5); 
     gemNumber3 = Math.floor(Math.random() * 10+1); 
     gemNumber4 = Math.floor(Math.random() * 10+1); 
     $(".gem1").attr("data-number", gemNumber1);
@@ -19,7 +24,7 @@ function generate() {
 function initialize(){
     total = 0;
     generate();
-    randomNumber = Math.floor(Math.random() * 99+12);
+    randomNumber = Math.floor(Math.random() * 99+20);
     $(".numberDiv").html(randomNumber);
     $("#score").html(total);
 }
@@ -33,9 +38,10 @@ $(".gems").on("click", function(){
        if (total == randomNumber){
            wins++;
            console.log("you win");
-           $(".nenergy").text("-ve Energy");
-           $(".penergy").text("+ve Energy");
+           $(".nenergy").html("-ve Energy |" +loss);
+           $(".penergy").html("+ve Energy |" +wins);
            $(".win").addClass("victory");
+        //    audioElement.play();
            widthGen+= 2*(wins);;
            $(".victory").css("width", widthGen);
            initialize();
@@ -43,13 +49,18 @@ $(".gems").on("click", function(){
     }
        else{
            loss++;
-           console.log("you lose");
            $(".loss").addClass("loser");
            lossGen+= 2*(loss);
-           $(".nenergy").text("-ve Energy");
-           $(".penergy").text("+ve Energy");
+           $(".nenergy").html("-ve Energy |" +loss);
+           $(".penergy").html("+ve Energy |" +wins);
            $(".loser").css("width", lossGen);
+        //    audioElement.play();
            initialize(); 
    }
-   console.log(total);
-})
+   
+   if ((wins===12)||(loss===12)){
+    document.location.reload();
+   }
+});
+
+

@@ -27,6 +27,7 @@ function initialize(){
     randomNumber = Math.floor(Math.random() * 99+20);
     $(".numberDiv").html(randomNumber);
     $("#score").html(total);
+    $(".numberDiv").slideUp(300).slideDown(500);
 }
 
 initialize();
@@ -37,7 +38,7 @@ $(".gems").on("click", function(){
        $("#score").html(total)
        if (total == randomNumber){
            wins++;
-           console.log("you win");
+           
            $(".nenergy").html("-ve Energy |" +loss);
            $(".penergy").html("+ve Energy |" +wins);
            $(".win").addClass("victory");

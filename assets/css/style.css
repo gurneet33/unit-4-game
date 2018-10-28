@@ -28,6 +28,11 @@ body {
     position: absolute;
    
 }
+.gems
+{
+    cursor: pointer;	
+}
+
 .gem1 {
     top: 50%;
     left: 5%;

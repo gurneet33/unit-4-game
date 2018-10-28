@@ -61,8 +61,6 @@ body {
     position: absolute;
     top: 17%;
     left: 45%;
-    animation-name: example;
-    animation-duration: 5s;
 }
 
 .card {
@@ -132,8 +130,24 @@ body {
     font-family: 'Oswald', sans-serif;
     color: rgb(117, 4, 117);
  }
+
+ @media (max-width:995px){
+    .numberDiv{
+        top: 40%;
+     }
+     .scoreBoard {
+         font-size: 12px;
+     }
+     .energy {
+         left: 55%;
+     }
+     .victory, .loser {
+         left: 70%;
+     }
+ }
  
-@keyframes example {
-    from {color: rgb(117, 4, 117);}
-    to {color: rgb(238, 0, 111);}
-}
+ @media (max-width:400px){
+    .victory, .loser {
+        left: 75%;
+    }
+ }

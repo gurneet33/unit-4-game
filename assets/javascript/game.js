@@ -11,10 +11,10 @@ audioElement.setAttribute("src", "assets/captainplanet24.mp3");
 
  
 function generate() {
-    gemNumber1 = Math.floor(Math.random() * 10+1);  
-    gemNumber2 = Math.floor(Math.random() * 10+5); 
-    gemNumber3 = Math.floor(Math.random() * 10+1); 
-    gemNumber4 = Math.floor(Math.random() * 10+1); 
+    gemNumber1 = Math.floor(Math.random() * 11+1);  
+    gemNumber2 = Math.floor(Math.random() * 11+1); 
+    gemNumber3 = Math.floor(Math.random() * 11+1); 
+    gemNumber4 = Math.floor(Math.random() * 11+1); 
     $(".gem1").attr("data-number", gemNumber1);
     $(".gem2").attr("data-number", gemNumber2);
     $(".gem3").attr("data-number", gemNumber3);
@@ -24,7 +24,7 @@ function generate() {
 function initialize(){
     total = 0;
     generate();
-    randomNumber = Math.floor(Math.random() * 99+20);
+    randomNumber = Math.floor(Math.random() * 99+19);
     $(".numberDiv").html(randomNumber);
     $("#score").html(total);
     $(".numberDiv").slideUp(300).slideDown(500);
